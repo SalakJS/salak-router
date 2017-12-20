@@ -1,10 +1,10 @@
 {
   "name": "salak-router",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Router for salak. Provide validation routes.",
   "main": "index.js",
   "scripts": {
-    "lint": "eslint index.js test/*",
+    "lint": "eslint .",
     "test": "jest",
     "test-cov": "npm run test -- --coverage"
   },
