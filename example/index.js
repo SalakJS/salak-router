@@ -1,14 +1,14 @@
 const Koa = require('koa')
 const bodyParser = require('koa-bodyparser')
 const Router = require('salak-router')
-const { Joi } = Router.Joi
+const Joi = Router.Joi
 
 const app = new Koa()
 const router = new Router()
 
 router.addRoute({
   path: '/test',
-  methods: 'GET',
+  method: 'GET',
   validate: {
     query: {
       id: Joi.number().required().description('文章id')

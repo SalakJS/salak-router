@@ -66,7 +66,7 @@ add route for app
 ```
 const Koa = require('koa')
 const Router = require('salak-router')
-const Joi = require('joi')
+const Joi = Router.Joi
 
 const app = new Koa()
 const router = new Router()
