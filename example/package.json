@@ -10,7 +10,6 @@
   "author": "wengeek <wenwei897684475@mgail.com>",
   "license": "MIT",
   "dependencies": {
-    "joi": "^13.0.2",
     "koa": "^2.4.1",
     "koa-bodyparser": "^4.2.0",
     "salak-router": "file:../"

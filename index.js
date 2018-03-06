@@ -10,7 +10,7 @@
 const KoaRouter = require('koa-router')
 const assert = require('assert')
 const debug = require('debug')('salak-router')
-const Joi = require('joi')
+const { Joi } = require('salak-joi-to-swagger')
 
 class Router extends KoaRouter {
   /**

@@ -2,7 +2,7 @@ const assert = require('assert')
 const http = require('http')
 const request = require('supertest')
 const Koa = require('koa')
-const Joi = require('joi')
+const { Joi } = require('salak-joi-to-swagger')
 const bodyParser = require('koa-bodyparser')
 const Router = require('..')
 

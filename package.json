@@ -1,6 +1,6 @@
 {
   "name": "salak-router",
-  "version": "1.0.4",
+  "version": "1.0.5",
   "description": "Router for salak. Provide validation routes.",
   "main": "index.js",
   "scripts": {
@@ -17,8 +17,8 @@
   "repository": "SalakJS/salak-router",
   "dependencies": {
     "debug": "^3.1.0",
-    "joi": "^13.0.2",
-    "koa-router": "^7.3.0"
+    "koa-router": "^7.3.0",
+    "salak-joi-to-swagger": "^1.0.1"
   },
   "devDependencies": {
     "eslint": "^4.13.0",
