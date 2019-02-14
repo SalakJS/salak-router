@@ -25,6 +25,7 @@ class Router extends KoaRouter {
     super(opts)
     this.requestFailure = (opts && opts.requestFailure) || 400
     this.responseFailure = (opts && opts.responseFailure) || 500
+    this.ignoreValidateResponses = (opts && opts.ignoreValidateResponses) || false
     this.joiOptions = (opts && opts.joiOptions) || {
       allowUnknown: true
     }
@@ -151,7 +152,7 @@ class Router extends KoaRouter {
       // validate output
       const { responses } = validate
 
-      if (responses) {
+      if (!this.ignoreValidateResponses && responses) {
         const error = this._validateOutput(responses, ctx)
 
         if (error) {
