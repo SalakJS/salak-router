@@ -182,7 +182,7 @@ class Router extends KoaRouter {
     if (spec.headers) {
       const res = Joi.validate(ctx.response.headers, spec.headers, this.joiOptions)
       if (res.error) {
-        return this._makeValidateError(res.error, this.responseFailure, 'ResponsetValidationError')
+        return this._makeValidateError(res.error, this.responseFailure, 'ResponseValidationError')
       }
 
       ctx.set(res.value)
@@ -191,7 +191,7 @@ class Router extends KoaRouter {
     if (spec.body) {
       const res = Joi.validate(ctx.body, spec.body, this.joiOptions)
       if (res.error) {
-        return this._makeValidateError(res.error, this.responseFailure, 'ResponsetValidationError')
+        return this._makeValidateError(res.error, this.responseFailure, 'ResponseValidationError')
       }
 
       ctx.body = res.value
